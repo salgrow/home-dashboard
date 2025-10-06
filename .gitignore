@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+.env
+/data/*
+!/data/.gitkeep
+/views/styles/fonts/*
+!/views/styles/fonts/.gitkeep
+/views/assets/vehicle-logo/*
+!/views/assets/vehicle-logo/.gitkeep
