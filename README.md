@@ -242,18 +242,20 @@ Services are **modular** - you can easily add, remove, or swap them:
 - **`routes/`** - Express route handlers
 
 ## Arduino Setup (E-Paper Display)
-This sketch is based on one specific hardware setup using the Seeed XIAO ESP32 series microcontrollers and 7.5" e-Paper Displays. It is not a general solution and may require modifications for other hardware.
+This sketch supports Seeed XIAO ESP32 microcontrollers and reTerminal E Series with 7.5" e-Paper displays. It may require modifications for other hardware.
 
 ### Hardware Requirements
-- **Seeed XIAO ESP32-C3** (or similar ESP32 board)
-- **7.5" e-Paper Display** (800x480 resolution)
+
+**Tested devices:**
+- [reTerminal E1002](https://www.seeedstudio.com/reTerminal-E1002-p-6535.html) with ESP32-S3 (Recommended - includes battery monitoring)
+- [XIAO 7.5" ePaper Panel](https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html) with XIAO ESP32-C3 or ESP32-S3
+- **7.5" e-Paper Display** (800x480 resolution, UC8179 controller)
 - USB-C cable for programming
-- Specifically was tested with the [XIAO 7.5" ePaper Panel](https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html)
 
 ### Arduino Code Location
-`arduino/xiao-7.5-epaper/epaper-client.ino`
+`arduino/epaper-client/epaper-client.ino`
 
-The sketch fetches the dashboard image from the server every 10 minutes and displays it on the e-paper screen.
+The sketch fetches the dashboard image from the server every 10 minutes and displays it on the e-paper screen. Battery monitoring is automatically enabled for ESP32-S3 devices (reTerminal E Series).
 
 **Important:** Your server should have a **fixed local IP address** or **local hostname** to ensure the e-paper display can reliably connect to it. If your server's IP changes (due to DHCP), the display won't be able to fetch the dashboard. You can either:
 - Set a static IP in your router's DHCP settings for the server's MAC address
@@ -275,7 +277,7 @@ The sketch fetches the dashboard image from the server every 10 minutes and disp
 - Search for "esp32" and install **esp32 by Espressif Systems**
 
 **3. Open the sketch**
-- Open the sketch `arduino/xiao-7.5-epaper/` in Arduino IDE and ensure `driver.h` is included as well
+- Open the sketch `arduino/epaper-client/` in Arduino IDE (includes `driver.h` and `partial-refresh.h`)
 
 **4. Configure WiFi and Server**
 Edit the Arduino sketch and replace the placeholder values at the top of the file:
@@ -283,8 +285,8 @@ Edit the Arduino sketch and replace the placeholder values at the top of the fil
 // Replace these template values:
 const char* WIFI_SSID = "{{WIFI_NAME}}";        // Your WiFi network name
 const char* WIFI_PASSWORD = "{{WIFI_PASSWORD}}"; // Your WiFi password
-const char* SERVER_IP = "{{SERVER_IP}}";         // Your server's local IP (e.g., "192.168.1.100")
-const int SERVER_PORT = {{SERVER_PORT}};         // Your server port (default: 7272)
+const char* SERVER_IP = "{{SERVER_IP}}";         // Your server's local IP or name (e.g., "192.168.1.100" or "server-name.local)
+const int SERVER_PORT = 7272;         // Your server port (default: 7272)
 ```
 
 **Example:**
@@ -296,8 +298,10 @@ const int SERVER_PORT = 7272;
 ```
 
 **5. Configure Board Settings**
-- **Board:** Tools → Board → ESP32 Arduino → **XIAO_ESP32C3**
-- **Port:** Tools → Port → (select the usb COM port of your connected XIAO)
+- **Board:** Tools → Board → ESP32 Arduino → Select your board:
+  - **XIAO_ESP32C3** for XIAO ESP32-C3
+  - **XIAO_ESP32S3** for XIAO ESP32-S3 or reTerminal E1002
+- **Port:** Tools → Port → (select the USB COM port of your connected device)
 
 **6. Upload the Sketch**
 - Connect XIAO ESP32-C3 via USB-C
